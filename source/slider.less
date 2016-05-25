@@ -64,6 +64,34 @@
     @media @small {
       font-size: 32px;
     }
-
   }
+}
+
+// Slider controllers
+.carousel-control {
+  .basic-transition;
+  .block;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  text-align: left;
+  background: none !important;
+  .center-text;
+  .size(88px;78px);
+  margin: -35px 0  0;
+  &:hover {
+    background: @brand-primary !important;
+  }
+  &:hover > i {
+    opacity: 1;
+  }
+  i {
+    .icon(@bright-text-color;30px;78px);
+    text-shadow: none;
+    opacity: 0.7;
+  }
+}
+
+.carousel-indicators {
+  bottom: 80px;
 }
