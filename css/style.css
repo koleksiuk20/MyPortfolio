@@ -6749,6 +6749,9 @@ button.close {
 .basic-transition {
   transition: all 0.2s ease-in-out;
 }
+.top-separator {
+  height: 60px;
+}
 .main-header {
   position: fixed;
   top: 0;
