@@ -6870,6 +6870,7 @@ button.close {
   border-color: #929292;
   border-radius: 2px;
   padding: 2px 4px;
+  margin-left: 18px;
   display: table;
 }
 .mobile-nav-button:hover {
