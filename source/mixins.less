@@ -30,11 +30,25 @@
   padding: @p-top 0 @p-bottom;
 }
 
+// Borders
+.basic-border(@width;@style;@color:@border-color) {
+  border-width: @width;
+  border-style: @style;
+  border-color: @color;
+}
+
 // Lists
 .list-style-none {
   list-style-type: none;
   padding-left: 0;
   margin-left: 0;
+}
+
+// Icons
+.icon(@color;@font-size;@line-height:@line-height-base) {
+  color: @color;
+  font-size: @font-size;
+  line-height: @line-height;
 }
 
 // Transitions

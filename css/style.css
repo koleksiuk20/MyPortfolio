@@ -1,4 +1,3 @@
-/* Bootstrap LESS */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6725,9 +6724,6 @@ button.close {
     display: none !important;
   }
 }
-/* Text variables */
-/* Background, text, border colors */
-/* Header sizes */
 .upper {
   text-transform: uppercase;
 }
@@ -6753,8 +6749,6 @@ button.close {
 .basic-transition {
   transition: all 0.2s ease-in-out;
 }
-/* Components */
-/* Main header */
 .main-header {
   position: fixed;
   top: 0;
@@ -6763,7 +6757,6 @@ button.close {
   background: #fff;
   z-index: 99;
 }
-/* Styles for 60px */
 .header-short,
 .header-short .header-content,
 .header-short .main-logo,
@@ -6771,7 +6764,6 @@ button.close {
 .header-short .nav-right {
   height: 60px;
 }
-/* Logo styles */
 .logo-wrapper {
   display: table;
 }
@@ -6783,7 +6775,6 @@ button.close {
   height: 50px;
   width: 50px;
 }
-/* General main menu styles */
 .header-content ul {
   list-style-type: none;
   padding-left: 0;
@@ -6828,11 +6819,71 @@ button.close {
 .nav-right ul li {
   padding: 0 13px;
 }
+.mobile-menu {
+  display: none;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: #222532;
+  padding: 30px 20px 0 30px;
+}
+.main-nav-list-mobile {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.main-nav-list-mobile li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.main-nav-list-mobile li a {
+  color: #fff;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+.main-nav-list-mobile li a:hover {
+  opacity: 1;
+}
+.mobile-menu-close {
+  transform: translateY(-8px);
+}
+.mobile-menu-close i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+.mobile-menu-close i:hover {
+  opacity: 1;
+}
+.mobile-nav-button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #929292;
+  border-radius: 2px;
+  padding: 2px 4px;
+  display: table;
+}
+.mobile-nav-button:hover {
+  color: #383838;
+}
+.mobile-nav-button i {
+  color: #929292;
+  font-size: 21px;
+  line-height: 23px;
+}
 footer {
   background: #222532;
   color: #999;
 }
-/* Copyright */
 .copyright {
   background: #15151e;
   text-transform: uppercase;
