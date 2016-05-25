@@ -6727,13 +6727,107 @@ button.close {
 }
 /* Text variables */
 /* Background, text, border colors */
+/* Header sizes */
 .upper {
   text-transform: uppercase;
 }
 .center-text {
   text-align: center;
 }
+.v-align {
+  vertical-align: middle;
+}
+.relative {
+  position: relative;
+}
+.v-align-transform {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.list-style-none {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.basic-transition {
+  transition: all 0.2s ease-in-out;
+}
 /* Components */
+/* Main header */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 99;
+}
+/* Styles for 60px */
+.header-short,
+.header-short .header-content,
+.header-short .main-logo,
+.header-short .nav-main,
+.header-short .nav-right {
+  height: 60px;
+}
+/* Logo styles */
+.logo-wrapper {
+  display: table;
+}
+.logo-wrapper .main-logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+.logo-wrapper .main-logo img {
+  height: 50px;
+  width: 50px;
+}
+/* General main menu styles */
+.header-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.header-content ul li {
+  float: left;
+}
+.header-content ul li a {
+  color: #929292;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.header-content ul li a:hover {
+  color: #383838;
+}
+.nav-main ul {
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-main ul li {
+  float: left;
+  line-height: 1.4;
+}
+.nav-main ul li a {
+  padding: 0 18px;
+}
+.menu-link-active {
+  color: #383838 !important;
+}
+.nav-right ul {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  margin-left: 20px;
+}
+.nav-right ul li {
+  padding: 0 13px;
+}
 footer {
   background: #222532;
   color: #999;

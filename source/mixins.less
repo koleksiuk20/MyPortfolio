@@ -11,7 +11,33 @@
   text-align: center;
 }
 
+.v-align {
+  vertical-align: middle;
+}
+
+.relative {
+  position: relative;
+}
+
+.v-align-transform {
+  .relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 // Padding
 .padding-top-bottom(@p-top;@p-bottom) {
   padding: @p-top 0 @p-bottom;
+}
+
+// Lists
+.list-style-none {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+// Transitions
+.basic-transition {
+  transition: all 0.2s ease-in-out;
 }

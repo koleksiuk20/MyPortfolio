@@ -1,0 +1,81 @@
+@import "mixins.less";
+
+/* Main header */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: @alternate-bg;
+  z-index: 99;
+}
+
+/* Styles for 60px */
+.header-short, .header-short .header-content, .header-short .main-logo, .header-short .nav-main, .header-short .nav-right {
+  height: @header-height-sm;
+}
+
+/* Logo styles */
+.logo-wrapper {
+  display: table;
+  .main-logo {
+    display: table-cell;
+    .v-align;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+/* General main menu styles */
+.header-content {
+  ul {
+    .list-style-none;
+    li {
+      float: left;
+      a {
+        color: @menu-text-color;
+        font-weight: 700;
+        text-decoration: none;
+        .upper;
+        .basic-transition;
+        &:hover {
+          color: @menu-text-hover-color;
+        }
+      }
+    }
+  }
+}
+
+// Main Menu
+.nav-main {
+  ul {
+    overflow: hidden;
+    .v-align-transform;
+    li {
+      float: left;
+      line-height: 1.4;
+      a {
+        padding: 0 18px;
+      }
+    }
+  }
+}
+
+.menu-link-active {
+  color: @menu-text-hover-color !important;
+}
+
+// Main menu icons
+.nav-right {
+  ul {
+    .v-align-transform;
+    overflow: hidden;
+    margin-left: 20px;
+    li {
+      padding: 0 13px;
+    }
+  }
+}
+
