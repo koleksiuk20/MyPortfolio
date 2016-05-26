@@ -95,3 +95,16 @@
 .carousel-indicators {
   bottom: 80px;
 }
+
+// Mobile slider
+.mobile-slider {
+  .bg-image(url('../images/slider_images/slide_one.jpg'));
+  &:after {
+    .dark-overlay;
+  }
+  .item-content {
+    .padding-top-bottom(80px;80px);
+    .relative;
+    z-index: 1;
+  }
+}
