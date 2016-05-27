@@ -6798,6 +6798,9 @@ button.close {
 .top-separator {
   height: 60px;
 }
+.alt-bg {
+  background: #fff;
+}
 .section-title {
   margin-bottom: 60px;
 }
