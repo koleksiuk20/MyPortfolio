@@ -45,6 +45,26 @@
   }
 }
 
+// Buttons
+.btn {
+  .upper;
+  font-weight: 700;
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  &:focus {
+    outline: none !important;
+  }
+  i {
+    .icon(@bright-text-color;22px;22px);
+    margin-right: 10px;
+    .v-align;
+  }
+  span {
+    .v-align;
+  }
+}
+
 // Columns with no padding
 .no-padding > .row > div[class*="col-"] {
   padding-left: 0;

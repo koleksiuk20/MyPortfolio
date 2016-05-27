@@ -6846,6 +6846,26 @@ button.close {
   font-size: 18px;
   line-height: 1;
 }
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.btn:focus {
+  outline: none !important;
+}
+.btn i {
+  color: #fff;
+  font-size: 22px;
+  line-height: 22px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.btn span {
+  vertical-align: middle;
+}
 .no-padding > .row > div[class*="col-"] {
   padding-left: 0;
   padding-right: 0;
