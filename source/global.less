@@ -9,3 +9,33 @@
 .top-separator {
   height: 60px;
 }
+
+// Section title
+.section-title {
+  margin-bottom: 60px;
+}
+
+// Section line
+.section-line {
+  font-size: 20px;
+  line-height: 20px;
+  color: @bright-text-color;
+  .clear;
+  .center-text;
+  .v-align;
+  &:before{
+    float: left;
+    .section-line-mix;
+  }
+  &:after{
+    float: right;
+    .section-line-mix;
+  }
+}
+
+.section-line-span {
+  margin: 0 3px;
+  i {
+    .icon(@brand-warning;18px;1);
+  }
+}

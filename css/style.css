@@ -6740,6 +6740,9 @@ button.close {
 .center-text {
   text-align: center;
 }
+.clear {
+  clear: both;
+}
 .relative {
   position: relative;
 }
@@ -6769,8 +6772,65 @@ button.close {
   width: 100%;
   height: 100%;
 }
+.section-line-mix {
+  background: #eaeaea;
+  content: "";
+  height: 2px;
+  margin-top: 10px;
+  width: 45%;
+}
+@media only screen and (min-width: 768px) {
+  .section-line-mix {
+    width: 48%;
+  }
+}
 .top-separator {
   height: 60px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.section-line {
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  clear: both;
+  text-align: center;
+  vertical-align: middle;
+}
+.section-line:before {
+  float: left;
+  background: #eaeaea;
+  content: "";
+  height: 2px;
+  margin-top: 10px;
+  width: 45%;
+}
+@media only screen and (min-width: 768px) {
+  .section-line:before {
+    width: 48%;
+  }
+}
+.section-line:after {
+  float: right;
+  background: #eaeaea;
+  content: "";
+  height: 2px;
+  margin-top: 10px;
+  width: 45%;
+}
+@media only screen and (min-width: 768px) {
+  .section-line:after {
+    width: 48%;
+  }
+}
+.section-line-span {
+  margin: 0 3px;
+}
+.section-line-span i {
+  color: #f0ad4e;
+  font-size: 18px;
+  line-height: 1;
 }
 .main-header {
   position: fixed;

@@ -23,6 +23,10 @@
   text-align: center;
 }
 
+.clear {
+  clear: both;
+}
+
 .relative {
   position: relative;
 }
@@ -82,4 +86,16 @@
   z-index: 0;
   background: none repeat rgba(30,30,30,0.5);
   .absolute-one-hundred-size
+}
+
+// Section Line
+.section-line-mix {
+  background: @section-line-color;
+  content: "";
+  height: 2px;
+  margin-top: 10px;
+  width: 45%;
+  @media @small {
+    width: 48%;
+  }
 }
