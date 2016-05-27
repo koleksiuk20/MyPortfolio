@@ -7213,6 +7213,9 @@ button.close {
   text-align: center;
   color: #333333;
 }
+.cv-image img {
+  width: 100%;
+}
 .contact-icons {
   text-align: center;
   padding: 50px 0 0;
