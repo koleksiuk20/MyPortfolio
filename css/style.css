@@ -6857,6 +6857,7 @@ button.close {
   right: 0;
   background: #fff;
   z-index: 99;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 .header-short,
 .header-short .header-content,
@@ -7003,6 +7004,12 @@ button.close {
 }
 #slide_one {
   background-image: url('../images/slider_images/slider_1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#slide_two {
+  background-image: url('../images/slider_images/slider_2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
