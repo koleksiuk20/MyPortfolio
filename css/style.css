@@ -7243,6 +7243,68 @@ button.close {
 .logos-list li a:hover {
   opacity: 0.3;
 }
+.form-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contact-form {
+  margin: 50px 20px 20px 20px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-form {
+    margin: 50px 30px 20px 50px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-form {
+    margin: 50px 30px 20px 20px;
+  }
+}
+.contact-form textarea {
+  height: 220px;
+  padding: 15px;
+  text-indent: 0;
+}
+.form-field {
+  margin-bottom: 20px;
+}
+form input,
+form textarea {
+  box-shadow: none !important;
+  outline: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd;
+  text-indent: 15px;
+  border-radius: 3px;
+  height: 40px;
+  width: 100%;
+  font-size: 13px;
+}
+form input:hover,
+form textarea:hover {
+  border-color: #bbb;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #929292;
+}
+form input {
+  maxlength: 50;
+}
+::-webkit-input-placeholder {
+  color: #ddd;
+}
+::-moz-placeholder {
+  color: #ddd;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #ddd;
+}
+.map-wrapper {
+  margin: 50px 35px 30px 35px;
+}
 footer {
   background: #222532;
   color: #999;
