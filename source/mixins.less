@@ -27,6 +27,10 @@
   clear: both;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .relative {
   position: relative;
 }
@@ -110,4 +114,15 @@
   font-size: @font-size;
   line-height: @line-height;
   color: @paragraph-color;
+}
+
+// Flexbox
+.flex-display {
+  display: flex;
+  display: -ms-flexbox;
+}
+
+.flex-justify {
+  justify-content: space-between;
+  -ms-flex-pack: justify;
 }

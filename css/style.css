@@ -6743,6 +6743,9 @@ button.close {
 .clear {
   clear: both;
 }
+.inline-block {
+  display: inline-block;
+}
 .relative {
   position: relative;
 }
@@ -6783,6 +6786,14 @@ button.close {
   .section-line-mix {
     width: 48%;
   }
+}
+.flex-display {
+  display: flex;
+  display: -ms-flexbox;
+}
+.flex-justify {
+  justify-content: space-between;
+  -ms-flex-pack: justify;
 }
 .top-separator {
   height: 60px;
@@ -6831,6 +6842,10 @@ button.close {
   color: #f0ad4e;
   font-size: 18px;
   line-height: 1;
+}
+.no-padding > .row > div[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
 }
 .main-header {
   position: fixed;
@@ -7180,6 +7195,50 @@ button.close {
 }
 .read-more:hover {
   color: #929292;
+}
+.contact-icons {
+  text-align: center;
+  padding: 50px 0 0;
+}
+.contact-text {
+  margin-bottom: 50px;
+}
+.contact-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #888;
+  text-align: center;
+}
+.contact-logos {
+  background: #c1c3c4;
+  padding: 30px 0 30px;
+}
+.logos-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+.logos-list li {
+  display: inline-block;
+  line-height: 1.2;
+}
+.logos-list li a {
+  color: #222532;
+  display: block;
+  opacity: 0.2;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 50px;
+  transition: all 0.2s ease-in-out;
+}
+.logos-list li a:hover {
+  opacity: 0.3;
 }
 footer {
   background: #222532;
