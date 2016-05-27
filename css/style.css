@@ -7199,6 +7199,20 @@ button.close {
 .read-more:hover {
   color: #929292;
 }
+.cv {
+  text-align: center;
+  padding: 50px 0 50px;
+}
+.cv .intro-text {
+  margin-bottom: 50px;
+}
+.cv-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #888;
+  text-align: center;
+  color: #333333;
+}
 .contact-icons {
   text-align: center;
   padding: 50px 0 0;
