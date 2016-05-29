@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/koleksiuk20/my_portfolio/issues"
   },
-  "homepage": "https://github.com/koleksiuk20/my_portfolio"
+  "homepage": "https://github.com/koleksiuk20/my_portfolio",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0"
+  }
 }
