@@ -7143,6 +7143,14 @@ button.close {
   font-family: 'Open Sans', Arial, sans-serif;
   padding-bottom: 5px;
 }
+.about .row {
+  margin-bottom: 7px;
+}
+.about .main-box,
+.about h4,
+.about span {
+  text-transform: uppercase;
+}
 .about h3.name {
   font-size: 60px;
   border-bottom: 1px dotted #d7d8d6;
@@ -7165,7 +7173,7 @@ button.close {
 }
 .about .personal-list {
   list-style: none;
-  margin-left: 45px;
+  margin-left: 20px;
 }
 .about .personal-list li {
   margin-bottom: 10px;
@@ -7173,16 +7181,16 @@ button.close {
   line-height: 18px;
   word-wrap: break-word;
 }
-.about .personal-list li p {
-  float: right;
-  width: 130px;
-}
-.about .personal-list span {
+.about .personal-list li span {
   color: #000;
   font-weight: bold;
-  width: 90px;
+  width: 100px;
   float: left;
   padding-right: 10px;
+}
+.about .personal-list li p {
+  float: right;
+  width: 150px;
 }
 .icon {
   display: block;
