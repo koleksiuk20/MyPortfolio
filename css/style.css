@@ -7139,21 +7139,72 @@ button.close {
   background: #f6f6f6;
 }
 .about {
-  text-align: center;
-  padding: 0px 0 0px;
+  padding: 50px 0 0px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding-bottom: 5px;
 }
-.about img {
-  width: 100%;
+.about h3.name {
+  font-size: 60px;
+  border-bottom: 1px dotted #d7d8d6;
+  margin-bottom: 10px;
 }
-.about-text {
-  margin-bottom: 50px;
+.about p.title {
+  color: #999999;
+  font-size: 24px;
+  font-weight: normal;
+  text-shadow: none;
+  letter-spacing: normal;
 }
-.about-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #888;
-  text-align: center;
-  color: #333333;
+.about .personal-details-image {
+  background: url('../images/about_images/personal-details-image.png');
+}
+.about h4 {
+  font-size: 36px;
+  margin: 0 0 15px 45px;
+  border-bottom: 1px dotted #d7d8d6;
+}
+.about .personal-list {
+  list-style: none;
+  margin-left: 45px;
+}
+.about .personal-list li {
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+.about .personal-list li p {
+  float: right;
+  width: 130px;
+}
+.about .personal-list span {
+  color: #000;
+  font-weight: bold;
+  width: 90px;
+  float: left;
+  padding-right: 10px;
+}
+.icon {
+  display: block;
+  width: 25px;
+  height: 26px;
+  position: absolute;
+  top: 25px;
+  left: 23px;
+}
+.box {
+  position: relative;
+  width: 360px;
+  background: url(../images/about_images/corner-dot.png) no-repeat 97% 2% #FFF;
+  padding: 20px;
+  float: left;
+  margin: 0 7px 0 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0 0 #d7d8d6;
+  -moz-box-shadow: 2px 2px 0 0 #d7d8d6;
+  box-shadow: 2px 2px 0 0 #d7d8d6;
 }
 .portfolio {
   text-align: center;
@@ -7228,23 +7279,6 @@ button.close {
 }
 .read-more:hover {
   color: #8dd4d4;
-}
-.cv {
-  text-align: center;
-  padding: 50px 0 50px;
-}
-.cv .intro-text {
-  margin-bottom: 50px;
-}
-.cv-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #888;
-  text-align: center;
-  color: #333333;
-}
-.cv-image img {
-  width: 100%;
 }
 .contact-icons {
   text-align: center;

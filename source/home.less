@@ -5,26 +5,82 @@
   background: @body-bg;
 }
 
-// Intro
+// About
 .about {
-  .center-text;
-  .padding-top-bottom(0px;0px);
-  img {
-    width: 100%;
+  .padding-top-bottom(50px;0px);
+  font-family: @font-family-sans-serif;
+  padding-bottom: 5px;
+
+  // Main box
+  h3.name {
+    font-size: 60px;
+    border-bottom: 1px dotted #d7d8d6;
+    margin-bottom: 10px;
+  }
+  p.title {
+    color: #999999;
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: none;
+    letter-spacing: normal;
+  }
+
+  // Personal details
+  .personal-details-image {
+    background: url('../images/about_images/personal-details-image.png');
+  }
+  h4 {
+    font-size: 36px;
+    margin: 0 0 15px 45px;
+    border-bottom: 1px dotted #d7d8d6;
+  }
+  .personal-list {
+    list-style: none;
+    margin-left: 45px;
+    li {
+      margin-bottom: 10px;
+      display: inline-block;
+      line-height: 18px;
+      word-wrap: break-word;
+      p {
+        float: right;
+        width: 130px;
+      }
+    }
+    span {
+      color: #000;
+      font-weight: bold;
+      width: 90px;
+      float: left;
+      padding-right: 10px;
+    }
   }
 }
 
-.about-text {
-  margin-bottom: 50px;
+// About icon
+.icon {
+  display: block;
+  width: 25px;
+  height: 26px;
+  position: absolute;
+  top: 25px;
+  left: 23px;
 }
 
-// Intro paragraph
-.about-text {
-  p {
-    .paragraph(16px);
-    .center-text;
-    color: @text-color;
-  }
+// About box
+.box {
+  position: relative;
+  width: 360px;
+  background: url(../images/about_images/corner-dot.png) no-repeat 97% 2% #FFF;
+  padding: 20px;
+  float: left;
+  margin: 0 7px 0 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0 0 #d7d8d6;
+  -moz-box-shadow: 2px 2px 0 0 #d7d8d6;
+  box-shadow: 2px 2px 0 0 #d7d8d6;
 }
 
 // Portfolio
