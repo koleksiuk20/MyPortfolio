@@ -7009,7 +7009,7 @@ button.close {
 }
 .top-slider .container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
@@ -7088,7 +7088,7 @@ button.close {
   display: block;
   outline: none;
   position: absolute;
-  top: 50%;
+  top: 40%;
   text-align: left;
   background: none !important;
   text-align: center;
