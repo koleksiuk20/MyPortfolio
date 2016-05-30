@@ -7143,7 +7143,8 @@ button.close {
   font-family: 'Open Sans', Arial, sans-serif;
   padding-bottom: 5px;
 }
-.about .row {
+.about .col-xs-12,
+.about .col-md-4 {
   margin-bottom: 7px;
 }
 .about .main-box,
