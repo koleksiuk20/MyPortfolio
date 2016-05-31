@@ -1,92 +1,168 @@
 // Main content
 #main-content {
-  z-index: 1;
   .relative;
   background: @body-bg;
+  z-index: 1;
 }
 
 // About
 .about {
-  .padding-top-bottom(50px;0px);
+  .padding-top-bottom(50px; 0);
+  font-family: @font-family-sans-serif;
   .col-xs-12, .col-md-4 {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
   .main-box, h4, span {
     .upper;
+    font-weight: bold;
   }
-  font-family: @font-family-sans-serif;
-  padding-bottom: 5px;
-
-  // Main box
-  h3.name {
-    font-size: 60px;
+  h3, h4 {
     border-bottom: 1px dotted #d7d8d6;
-    margin-bottom: 10px;
   }
-  p.title {
+}
+
+.box {
+  .relative;
+  width: 100%;
+  margin: 0 7px 50px 0;
+  padding: 20px;
+  float: left;
+  background: url('../images/about_images/corner-dot.png') no-repeat 97% 3% #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #d7d8d6;
+  -webkit-box-shadow: 2px 2px 2px 2px #d7d8d6;
+  -moz-box-shadow: 2px 2px 2px 2px #d7d8d6;
+}
+
+.icon {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+  display: block;
+  width: 25px;
+  height: 26px;
+}
+
+.personal-details-icon {
+  background: url('../images/about_images/personal-details-icon.png');
+}
+
+.education-icon {
+  background: url('../images/about_images/education-icon.png');
+}
+
+.work-icon {
+  background: url('../images/about_images/work-icon.png');
+}
+
+.skills-icon {
+  background: url('../images/about_images/skills-icon.png');
+}
+
+.main-box {
+  h3 {
+    margin-bottom: 10px;
+    font-size: 60px;
+  }
+  p {
     color: #999999;
     font-size: 24px;
     font-weight: normal;
     text-shadow: none;
     letter-spacing: normal;
   }
+}
 
-  // Personal details
-  .personal-details-image {
-    background: url('../images/about_images/personal-details-image.png');
-  }
-  h4 {
-    font-size: 36px;
-    margin: 0 0 15px 45px;
-    border-bottom: 1px dotted #d7d8d6;
-  }
-  .personal-list {
-    list-style: none;
-    margin-left: 20px;
-    li {
-      margin-bottom: 10px;
-      display: inline-block;
-      line-height: 18px;
-      word-wrap: break-word;
-      span {
-        color: #000;
-        font-weight: bold;
-        width: 100px;
-        float: left;
-        padding-right: 10px;
-      }
-      p {
-        float: right;
-        width: 150px;
-      }
+.about-section-title {
+  margin: 0 0 15px 45px;
+  font-size: 36px;
+}
+
+.about-section-list {
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 18px;
+    span {
+      display: block;
+      width: 100%;
+      padding-right: 10px;
+      float: left;
+      color: #555554;
+      font-weight: bold;
+    }
+    p {
+      float: left;
     }
   }
 }
 
-// About icon
-.icon {
-  display: block;
-  width: 25px;
-  height: 26px;
-  position: absolute;
-  top: 25px;
-  left: 23px;
+.personal-details, .skills-list {
+  span {
+    width: 100px !important;
+  }
+  p {
+    width: 150px !important;
+  }
 }
 
-// About box
-.box {
+.work-details-list {
+  -moz-padding-start: 10px;
+  -webkit-padding-start: 10px;
+}
+
+.skills-bar {
+  margin: 0 0 15px 130px;
+}
+
+.rating-bar {
   position: relative;
-  width: 360px;
-  background: url(../images/about_images/corner-dot.png) no-repeat 97% 2% #FFF;
-  padding: 20px;
-  float: left;
-  margin: 0 7px 0 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 0 0 #d7d8d6;
-  -moz-box-shadow: 2px 2px 0 0 #d7d8d6;
-  box-shadow: 2px 2px 0 0 #d7d8d6;
+  display: inline-block;
+  width: 110px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  background: url('../images/about_images/bar-rating.png') top left repeat-x;
+  list-style: none;
+  .v-align;
+}
+
+.current-rating {
+  position: absolute;
+  display: block;
+  height: 10px;
+  background: url('../images/about_images/bar-rating.png') left bottom;
+}
+
+.one-bar {
+  width: 16px;
+}
+
+.two-bars {
+  width: 31px;
+}
+
+.three-bars {
+  width: 47px;
+}
+
+.four-bars {
+  width: 63px;
+}
+
+.five-bars {
+  width: 78px;
+}
+
+.six-bars {
+  width: 94px;
+}
+
+.seven-bars {
+  width: 110px;
 }
 
 // Portfolio
