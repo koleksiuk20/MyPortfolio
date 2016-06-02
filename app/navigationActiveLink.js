@@ -1,23 +1,23 @@
 function navigationActiveLink() {
-    let links = $('.main-nav-list a');
-    let headerHeight = $('header').height();
+    var links = $('.main-nav-list a');
+    var headerHeight = $('header').height();
 
-    let menuLinks = links.map(function(_index, link) {
-        let jQueryObj = $(link);
-        let anchor = jQueryObj.attr('href');
-        let section = $(anchor);
+    var menuLinks = links.map(function(_index, link) {
+        var jQueryObj = $(link);
+        var anchor = jQueryObj.attr('href');
+        var section = $(anchor);
 
-        let height = section.height();
+        var height = section.height();
 
-        let topOffset = section.offset().top;
-        let bottomOffset = topOffset + height;
+        var topOffset = section.offset().top;
+        var bottomOffset = topOffset + height;
 
         return { element: jQueryObj, topOffset: topOffset, bottomOffset: bottomOffset };
     });
 
-    $(document).on('scroll', function(e) {
+    $(document).on('scroll', function() {
         menuLinks.each(function(_index, navigationSection) {
-            let currentScrollTop = $(document).scrollTop() + headerHeight;
+            var currentScrollTop = $(document).scrollTop() + headerHeight;
 
             if(currentScrollTop > navigationSection.topOffset && currentScrollTop < navigationSection.bottomOffset) {
                 links.removeClass('menu-link-active');
