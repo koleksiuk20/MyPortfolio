@@ -95,13 +95,16 @@
 .main-nav-list-mobile {
   .list-style-none;
   li {
-    margin-bottom: 10px;
+    width: 80%;
+    .padding-top-bottom(10px; 10px);
+    border-bottom: 1px dotted #d7d8d6;
     line-height: 1.4;
     a {
       color: @bright-text-color;
       opacity: 0.5;
       .basic-transition;
       text-decoration: none;
+      font-size: 20px;
       &:hover {
         opacity: 1;
       }
@@ -110,7 +113,7 @@
 }
 
 .mobile-menu-close {
-  transform: translateY(-8px);
+  transform: translateY(-20px);
   i {
     .icon(@bright-text-color;20px);
     opacity: 0.5;
