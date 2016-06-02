@@ -3156,15 +3156,16 @@ input[type="button"].btn-block {
   padding: 0 13px;
 }
 .mobile-menu {
-  display: none;
-  width: 50%;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
-  background: #222532;
+  display: none;
+  width: 50%;
   padding: 30px 20px 0 30px;
+  background: #222532;
+  opacity: 0.9;
+  z-index: 999;
 }
 .main-nav-list-mobile {
   list-style-type: none;
