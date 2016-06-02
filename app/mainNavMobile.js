@@ -9,4 +9,4 @@ function mainNavMobile() {
     });
 }
 
-module.exports = mainNavMobile();
+module.exports = mainNavMobile;

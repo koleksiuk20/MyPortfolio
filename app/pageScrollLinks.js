@@ -10,4 +10,4 @@ function initPageScrollLinks() {
     });
 }
 
-module.exports = initPageScrollLinks();
+module.exports = initPageScrollLinks;

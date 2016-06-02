@@ -46,14 +46,14 @@
 
 	'use strict';
 
-	var initShowActiveNavigationLink = __webpack_require__(1);
+	var navigationActiveLink = __webpack_require__(1);
 	var initPageScrollLinks = __webpack_require__(2);
 	var initMainNavMobile = __webpack_require__(3);
 
 	$(document).ready(function () {
 
 	    // Change active menu link on scroll
-	    initShowActiveNavigationLink();
+	    navigationActiveLink();
 
 	    // Page scroll anchors init
 	    initPageScrollLinks();
@@ -85,7 +85,7 @@
 	        return { element: jQueryObj, topOffset: topOffset, bottomOffset: bottomOffset };
 	    });
 
-	    $(document).on('scroll', function (e) {
+	    $(document).on('scroll', function () {
 	        menuLinks.each(function (_index, navigationSection) {
 	            var currentScrollTop = $(document).scrollTop() + headerHeight;
 
@@ -97,7 +97,7 @@
 	    });
 	}
 
-	module.exports = navigationActiveLink();
+	module.exports = navigationActiveLink;
 
 /***/ },
 /* 2 */
@@ -115,9 +115,9 @@
 
 	        $('body, html').animate({ scrollTop: offset + 1 }, 500);
 	    });
-	};
+	}
 
-	module.exports = initPageScrollLinks();
+	module.exports = initPageScrollLinks;
 
 /***/ },
 /* 3 */
@@ -136,7 +136,7 @@
 	    });
 	}
 
-	module.exports = mainNavMobile();
+	module.exports = mainNavMobile;
 
 /***/ }
 /******/ ]);

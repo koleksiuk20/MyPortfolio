@@ -27,4 +27,4 @@ function navigationActiveLink() {
     });
 }
 
-module.exports = navigationActiveLink();
+module.exports = navigationActiveLink;
