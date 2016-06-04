@@ -3441,6 +3441,7 @@ input[type="button"].btn-block {
   font-weight: bold;
 }
 .about-section-list li p {
+  width: 100%;
   float: left;
 }
 .personal-details span,
