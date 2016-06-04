@@ -134,6 +134,10 @@
 	        event.preventDefault();
 	        $('#main-nav-mobile').hide();
 	    });
+	    $('.main-nav-list-mobile li').bind('click', function () {
+	        event.preventDefault();
+	        $('#main-nav-mobile').hide();
+	    });
 	}
 
 	module.exports = mainNavMobile;
