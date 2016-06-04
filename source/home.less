@@ -87,6 +87,7 @@
   list-style: none;
   li {
     display: inline-block;
+    width: 100%;
     margin-bottom: 10px;
     line-height: 18px;
     span {
@@ -104,7 +105,7 @@
   }
 }
 
-.personal-details, .skills-list {
+.personal-details {
   span {
     width: 100px !important;
   }
@@ -118,55 +119,96 @@
   -webkit-padding-start: 10px;
 }
 
-.skills-bar {
-  margin: 0 0 15px 130px;
-}
-
-.rating-bar {
+.progress {
   position: relative;
   display: inline-block;
-  width: 110px;
-  height: 10px;
-  margin: 0;
+  width: 250px;
+  height: 20px;
+  margin: 0 15px 0 0;
   padding: 0;
-  background: url('../images/about_images/bar-rating.png') top left repeat-x;
   list-style: none;
   .v-align;
+  @media @small {
+    width: 200px;
+  }
 }
 
-.current-rating {
-  position: absolute;
+.progress-bar {
+  width: 100%;
+  background: #ff0000; /* Old browsers */
+  background: -moz-linear-gradient(left, #ff0000 0%, #ffff00 50%, #ffff00 51%, #00ff00 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ff0000 0%,#ffff00 50%,#ffff00 51%,#00ff00 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ff0000 0%,#ffff00 50%,#ffff00 51%,#00ff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.progress-bar:after {
+  content: '';
   display: block;
-  height: 10px;
-  background: url('../images/about_images/bar-rating.png') left bottom;
+  height: 20px;
+  float: right;
+  background: #f6f6f6;
 }
 
-.one-bar {
-  width: 16px;
+#progress-software.progress-bar:after {
+  width: 5%;
 }
 
-.two-bars {
-  width: 31px;
+#progress-mobile.progress-bar:after {
+  width: 5%;
 }
 
-.three-bars {
-  width: 47px;
+#progress-automation.progress-bar:after {
+  width: 40%;
 }
 
-.four-bars {
-  width: 63px;
+#progress-selenium.progress-bar:after {
+  width: 40%;
 }
 
-.five-bars {
-  width: 78px;
+#progress-cucumber.progress-bar:after {
+  width: 40%;
 }
 
-.six-bars {
-  width: 94px;
+#progress-html-css.progress-bar:after {
+  width: 15%;
 }
 
-.seven-bars {
-  width: 110px;
+#progress-sass-less.progress-bar:after {
+  width: 20%;
+}
+
+#progress-js.progress-bar:after {
+  width: 30%;
+}
+
+#progress-jquery.progress-bar:after {
+  width: 30%;
+}
+
+#progress-ajax.progress-bar:after {
+  width: 50%;
+}
+
+#progress-gulp.progress-bar:after {
+  width: 20%;
+}
+
+#progress-webpack.progress-bar:after {
+  width: 10%;
+}
+
+#progress-php.progress-bar:after {
+  width: 60%;
+}
+
+.progress-bar-value {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #555554;
 }
 
 // Portfolio
