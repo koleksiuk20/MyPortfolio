@@ -139,6 +139,9 @@
   background: -moz-linear-gradient(left, #ff0000 0%, #ffff00 50%, #ffff00 51%, #00ff00 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #ff0000 0%,#ffff00 50%,#ffff00 51%,#00ff00 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #ff0000 0%,#ffff00 50%,#ffff00 51%,#00ff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  @media @medium {
+    visibility: hidden;
+  }
 }
 
 .progress-bar:after {
@@ -209,6 +212,10 @@
   margin: 0 auto;
   font-weight: bold;
   color: #555554;
+  z-index: 100;
+  @media @medium {
+    visibility: hidden;
+  }
 }
 
 // Portfolio

@@ -49,6 +49,7 @@
 	var navigationActiveLink = __webpack_require__(1);
 	var initPageScrollLinks = __webpack_require__(2);
 	var initMainNavMobile = __webpack_require__(3);
+	var initAnimatedProgressBar = __webpack_require__(4);
 
 	$(document).ready(function () {
 
@@ -60,6 +61,9 @@
 
 	    // Mobile menu init on click
 	    initMainNavMobile();
+
+	    // Init animated progress bar
+	    initAnimatedProgressBar();
 	});
 
 /***/ },
@@ -141,6 +145,33 @@
 	}
 
 	module.exports = mainNavMobile;
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function animatedProgressBar() {
+	    var windowWidth = $(window).width();
+
+	    if (windowWidth > 992) {
+	        $(window).scroll(function () {
+	            $('.animatedEntrance').each(function () {
+	                var imagePos = $(this).offset().top;
+
+	                var topOfWindow = $(window).scrollTop();
+
+	                if (imagePos < topOfWindow + 60) {
+	                    $('.progress-bar-value').css('visibility', 'visible').addClass('animated').addClass('slideInLeft');
+	                    $('.progress-bar').css('visibility', 'visible').addClass('animated').addClass('slideInLeft');
+	                }
+	            });
+	        });
+	    }
+	}
+
+	module.exports = animatedProgressBar;
 
 /***/ }
 /******/ ]);

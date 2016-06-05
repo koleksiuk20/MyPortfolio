@@ -3565,6 +3565,11 @@ input[type="button"].btn-block {
   background: linear-gradient(to right, #ff0000 0%, #ffff00 50%, #ffff00 51%, #00ff00 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+@media only screen and (min-width: 992px) {
+  .progress-bar {
+    visibility: hidden;
+  }
+}
 .progress-bar:after {
   content: '';
   display: block;
@@ -3619,6 +3624,12 @@ input[type="button"].btn-block {
   margin: 0 auto;
   font-weight: bold;
   color: #555554;
+  z-index: 100;
+}
+@media only screen and (min-width: 992px) {
+  .progress-bar-value {
+    visibility: hidden;
+  }
 }
 .portfolio {
   text-align: center;
