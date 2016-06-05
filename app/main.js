@@ -17,4 +17,7 @@ $(document).ready(function(){
     // Init animated progress bar
     initAnimatedProgressBar();
 
+    // Form validator
+    $('form').validator('validate');
+
 });
