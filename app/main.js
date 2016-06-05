@@ -18,6 +18,6 @@ $(document).ready(function(){
     initAnimatedProgressBar();
 
     // Form validator
-    $('form').validator('validate');
+    $('form').validator();
 
 });

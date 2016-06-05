@@ -66,7 +66,7 @@
 	    initAnimatedProgressBar();
 
 	    // Form validator
-	    $('form').validator('validate');
+	    $('form').validator();
 	});
 
 /***/ },
