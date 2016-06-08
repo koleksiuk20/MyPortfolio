@@ -5,9 +5,6 @@ var initAnimatedProgressBar = require('./animatedProgressBar');
 
 $(document).ready(function(){
 
-    // Change active menu link on scroll
-    navigationActiveLink();
-
     // Page scroll anchors init
     initPageScrollLinks();
 
@@ -19,5 +16,12 @@ $(document).ready(function(){
 
     // Form validator
     $('form').validator();
+
+});
+
+$(window).load(function() {
+
+    // Change active menu link on scroll
+    navigationActiveLink();
 
 });

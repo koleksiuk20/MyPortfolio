@@ -53,9 +53,6 @@
 
 	$(document).ready(function () {
 
-	    // Change active menu link on scroll
-	    navigationActiveLink();
-
 	    // Page scroll anchors init
 	    initPageScrollLinks();
 
@@ -67,6 +64,12 @@
 
 	    // Form validator
 	    $('form').validator();
+	});
+
+	$(window).load(function () {
+
+	    // Change active menu link on scroll
+	    navigationActiveLink();
 	});
 
 /***/ },
