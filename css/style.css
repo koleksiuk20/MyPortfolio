@@ -3804,6 +3804,11 @@ form textarea:focus {
 :-ms-input-placeholder {
   color: #ddd;
 }
+.help-block {
+  text-align: right;
+  color: #c1c3c4;
+  opacity: 0.5;
+}
 .map-wrapper {
   margin: 50px 35px 30px 35px;
 }
