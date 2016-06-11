@@ -7,7 +7,7 @@ function animatedProgressBar() {
                 var imagePos = $(this).offset().top;
                 var topOfWindow = $(window).scrollTop();
 
-                if (imagePos < topOfWindow + 60) {
+                if (imagePos < topOfWindow + 240) {
                     $('.progress-bar-value').css('visibility', 'visible').addClass('animated slideInLeft');
                     $('.progress-bar').css('visibility', 'visible').addClass('animated slideInLeft');
                 }
