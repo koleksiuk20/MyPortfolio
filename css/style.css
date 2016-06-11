@@ -3544,17 +3544,12 @@ input[type="button"].btn-block {
 .progress {
   position: relative;
   display: inline-block;
-  width: 250px;
+  width: 100%;
   height: 20px;
   margin: 0 15px 0 0;
   padding: 0;
   list-style: none;
   vertical-align: middle;
-}
-@media only screen and (min-width: 768px) {
-  .progress {
-    width: 200px;
-  }
 }
 .progress-bar {
   width: 100%;
