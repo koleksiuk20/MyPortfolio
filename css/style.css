@@ -3437,10 +3437,6 @@ input[type="button"].btn-block {
 .about .container .row:first-child {
   margin-top: 50px;
 }
-.about .col-xs-12,
-.about .col-md-4 {
-  margin-bottom: 10px;
-}
 .about .main-box,
 .about h4,
 .about span {
