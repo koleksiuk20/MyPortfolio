@@ -3434,6 +3434,9 @@ input[type="button"].btn-block {
 .about {
   font-family: 'Open Sans', Arial, sans-serif;
 }
+.about .container .row:first-child {
+  margin-top: 50px;
+}
 .about .col-xs-12,
 .about .col-md-4 {
   margin-bottom: 10px;
@@ -3448,10 +3451,21 @@ input[type="button"].btn-block {
 .about h4 {
   border-bottom: 1px dotted #d7d8d6;
 }
+.main-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 52px;
+}
+.main-box p {
+  color: #999999;
+  font-size: 24px;
+  font-weight: normal;
+  text-shadow: none;
+  letter-spacing: normal;
+}
 .box {
   position: relative;
   width: 100%;
-  margin: 50px 7px 50px 0;
+  margin: 0 7px 50px 0;
   padding: 20px;
   float: left;
   background: url('../images/about_images/corner-dot.png') no-repeat 97% 3% #fff;
@@ -3481,20 +3495,6 @@ input[type="button"].btn-block {
 }
 .skills-icon {
   background: url('../images/about_images/skills-icon.png');
-}
-.main-box {
-  margin-top: 50px;
-}
-.main-box h3 {
-  margin-bottom: 10px;
-  font-size: 52px;
-}
-.main-box p {
-  color: #999999;
-  font-size: 24px;
-  font-weight: normal;
-  text-shadow: none;
-  letter-spacing: normal;
 }
 .about-section-title {
   margin: 0 0 15px 45px;
