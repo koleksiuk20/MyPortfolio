@@ -3229,16 +3229,6 @@ input[type="button"].btn-block {
 .menu-link-active {
   color: #8dd4d4 !important;
 }
-.nav-right ul {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  overflow: hidden;
-  margin-left: 20px;
-}
-.nav-right ul li {
-  padding: 0 13px;
-}
 .mobile-menu {
   position: fixed;
   top: 0;
