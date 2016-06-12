@@ -3661,31 +3661,33 @@ input[type="button"].btn-block {
 .portfolio-content {
   font-size: 14px;
 }
-.hor-line {
+/*.hor-line {
   margin: 0 -25px 25px;
   height: 1px;
-  display: block;
-  background: #ececec;
+  .block;
+  background: lighten(@border-color, 6%);
 }
+
 .comments-link {
-  color: #888;
+  color: @paragraph-color;
   text-decoration: none;
   line-height: 30px;
-  transition: all 0.2s ease-in-out;
+  .basic-transition;
+  &:hover {
+    color: @brand-primary;
+    text-decoration: none;
+  }
 }
-.comments-link:hover {
-  color: #8dd4d4;
-  text-decoration: none;
-}
+
 .read-more {
   line-height: 30px;
   font-size: 24px;
-  color: #ddd;
-  transition: all 0.2s ease-in-out;
-}
-.read-more:hover {
-  color: #8dd4d4;
-}
+  color: @border-color;
+  .basic-transition;
+  &:hover {
+    color: @brand-primary;
+  }
+}*/
 .contact-icons {
   text-align: center;
 }
