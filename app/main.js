@@ -3,6 +3,7 @@ var initPageScrollLinks = require('./pageScrollLinks.js');
 var initMainNavMobile = require('./mainNavMobile.js');
 var initAnimatedProgressBar = require('./animatedProgressBar.js');
 var initSliderTransition = require('./sliderTransition.js');
+var hideMobileNavClickOutside = require('./hideMobileNavClickOutside.js');
 
 $(document).ready(function(){
 
@@ -20,6 +21,9 @@ $(document).ready(function(){
 
     // Init slider transition
     initSliderTransition();
+
+    // Init hide mobile nav on click outside container
+    hideMobileNavClickOutside();
 
 });
 

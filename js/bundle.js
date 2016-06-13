@@ -51,6 +51,7 @@
 	var initMainNavMobile = __webpack_require__(3);
 	var initAnimatedProgressBar = __webpack_require__(4);
 	var initSliderTransition = __webpack_require__(5);
+	var hideMobileNavClickOutside = __webpack_require__(6);
 
 	$(document).ready(function () {
 
@@ -68,6 +69,9 @@
 
 	    // Init slider transition
 	    initSliderTransition();
+
+	    // Init hide mobile nav on click outside container
+	    hideMobileNavClickOutside();
 	});
 
 	$(window).load(function () {
@@ -198,6 +202,24 @@
 	window.addEventListener('scroll', sliderTransition);
 
 	module.exports = sliderTransition;
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function hideMobileNavClickOutside() {
+	    $(document).mouseup(function (e) {
+	        var menu = $('#main-nav-mobile');
+
+	        if (!menu.is(e.target) && menu.has(e.target).length === 0) {
+	            menu.hide();
+	        }
+	    });
+	}
+
+	module.exports = hideMobileNavClickOutside;
 
 /***/ }
 /******/ ]);
