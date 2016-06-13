@@ -50,6 +50,7 @@
 	var initPageScrollLinks = __webpack_require__(2);
 	var initMainNavMobile = __webpack_require__(3);
 	var initAnimatedProgressBar = __webpack_require__(4);
+	var initSliderTransition = __webpack_require__(5);
 
 	$(document).ready(function () {
 
@@ -64,6 +65,9 @@
 
 	    // Form validator
 	    $('form').validator();
+
+	    // Init slider transition
+	    initSliderTransition();
 	});
 
 	$(window).load(function () {
@@ -177,6 +181,23 @@
 	}
 
 	module.exports = animatedProgressBar;
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function sliderTransition() {
+	    var ypos = window.pageYOffset;
+	    var background = document.getElementById('top-slider');
+
+	    background.style.top = ypos * -0.5 + 'px';
+	}
+
+	window.addEventListener('scroll', sliderTransition);
+
+	module.exports = sliderTransition;
 
 /***/ }
 /******/ ]);
