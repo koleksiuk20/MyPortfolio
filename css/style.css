@@ -3233,9 +3233,9 @@ input[type="button"].btn-block {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   display: none;
-  width: 50%;
+  width: 30%;
   padding: 30px 20px 0 30px;
   background: #222532;
   opacity: 0.9;
@@ -3253,6 +3253,7 @@ input[type="button"].btn-block {
   line-height: 1.4;
 }
 .main-nav-list-mobile li a {
+  padding: 10px 60% 10px 0;
   color: #fff;
   opacity: 0.5;
   transition: all 0.2s ease-in-out;
