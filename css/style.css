@@ -3304,7 +3304,7 @@ input[type="button"].btn-block {
 }
 .top-slider .container {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
@@ -3349,6 +3349,8 @@ input[type="button"].btn-block {
   height: 100%;
 }
 .item-content {
+  width: 80%;
+  margin: 0 auto;
   color: #f5f5f5;
   text-align: center;
 }
@@ -3384,7 +3386,7 @@ input[type="button"].btn-block {
   display: block;
   outline: none;
   position: absolute;
-  top: 50%;
+  top: 55%;
   text-align: left;
   background: none !important;
   text-align: center;
