@@ -4,6 +4,7 @@ var initMainNavMobile = require('./mainNavMobile.js');
 var initAnimatedProgressBar = require('./animatedProgressBar.js');
 var initSliderTransition = require('./sliderTransition.js');
 var hideMobileNavClickOutside = require('./hideMobileNavClickOutside.js');
+var initFormValidator = require('./initFormValidator.js');
 
 $(document).ready(function(){
 
@@ -16,14 +17,15 @@ $(document).ready(function(){
     // Init animated progress bar
     initAnimatedProgressBar();
 
-    // Form validator
-    $('form').validator();
-
     // Init slider transition
     initSliderTransition();
 
     // Init hide mobile nav on click outside container
     hideMobileNavClickOutside();
+
+    // Init form validator
+    initFormValidator();
+
 
 });
 

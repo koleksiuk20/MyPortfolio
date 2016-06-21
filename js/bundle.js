@@ -52,6 +52,7 @@
 	var initAnimatedProgressBar = __webpack_require__(4);
 	var initSliderTransition = __webpack_require__(5);
 	var hideMobileNavClickOutside = __webpack_require__(6);
+	var initFormValidator = __webpack_require__(8);
 
 	$(document).ready(function () {
 
@@ -64,14 +65,14 @@
 	    // Init animated progress bar
 	    initAnimatedProgressBar();
 
-	    // Form validator
-	    $('form').validator();
-
 	    // Init slider transition
 	    initSliderTransition();
 
 	    // Init hide mobile nav on click outside container
 	    hideMobileNavClickOutside();
+
+	    // Init form validator
+	    initFormValidator();
 	});
 
 	$(window).load(function () {
@@ -220,6 +221,64 @@
 	}
 
 	module.exports = hideMobileNavClickOutside;
+
+/***/ },
+/* 7 */,
+/* 8 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function initFormValidator() {
+	    var form = $('form');
+	    var name = $('#name');
+	    var email = $('#email');
+	    var subject = $('#subject');
+	    var message = $('#message');
+
+	    // Validate each input except textarea
+	    form.submit(function (event) {
+	        event.preventDefault();
+
+	        if (name.val().length < 3) {
+	            name.next().css('display', 'block');
+	        }
+	        if (!validateEmail(email.val())) {
+	            email.next().css('display', 'block');
+	        }
+	        if (subject.val().length < 3) {
+	            subject.next().css('display', 'block');
+	        }
+	    });
+
+	    // Validate email regular regex
+	    function validateEmail(email) {
+	        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	        return re.test(email);
+	    }
+
+	    // Text area counter
+	    function counterMessage() {
+	        var maxLength = 500;
+	        var remainingLength = maxLength;
+	        var counter = $('#counter');
+
+	        counter.html(remainingLength + '/' + maxLength);
+
+	        message.keyup(function (e) {
+	            e.preventDefault();
+
+	            var textLength = message.val().length;
+	            var remainingLength = maxLength - textLength;
+
+	            counter.html(remainingLength + '/' + maxLength);
+	        });
+	    }
+
+	    counterMessage();
+	}
+
+	module.exports = initFormValidator;
 
 /***/ }
 /******/ ]);

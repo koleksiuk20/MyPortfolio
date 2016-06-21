@@ -3793,9 +3793,13 @@ form textarea:focus {
   color: #ddd;
 }
 .help-block {
-  text-align: right;
-  color: #c1c3c4;
+  display: none;
+  color: #e20000;
   opacity: 0.5;
+}
+#counter {
+  display: block;
+  color: #c1c3c4;
 }
 .map-wrapper {
   margin: 50px 35px 30px 35px;
