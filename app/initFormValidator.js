@@ -11,12 +11,21 @@ function initFormValidator() {
 
         if (name.val().length < 3) {
             name.next().css('display', 'block');
+            name.keyup(function() {
+                name.next().css('display', 'none');
+            });
         }
         if (!validateEmail(email.val())) {
             email.next().css('display', 'block');
+            email.keyup(function() {
+                email.next().css('display', 'none');
+            });
         }
         if (subject.val().length < 3) {
             subject.next().css('display', 'block');
+            subject.keyup(function() {
+                subject.next().css('display', 'none');
+            });
         }
     });
 
