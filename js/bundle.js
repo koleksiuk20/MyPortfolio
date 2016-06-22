@@ -235,7 +235,7 @@
 	    var email = $('#email');
 	    var subject = $('#subject');
 	    var message = $('#message');
-	    var success = $('<div>Message sent</div>');
+	    var success = $('<div>Your message has been sent</div>');
 	    var counterMaxLength = 500;
 	    var counterRemainingLength = counterMaxLength;
 	    var counter = $('#counter');
@@ -276,6 +276,9 @@
 	                'font-weight': 'bold',
 	                'color': 'green'
 	            });
+	            setTimeout(function () {
+	                success.remove();
+	            }, 3000);
 	            $(this).closest(form).find('input[type=text], input[type=email], textarea').val('');
 	            counter.html(counterRemainingLength + '/' + counterMaxLength);
 	        }
