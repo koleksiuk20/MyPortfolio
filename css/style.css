@@ -3169,6 +3169,21 @@ input[type="button"].btn-block {
   padding-left: 0;
   padding-right: 0;
 }
+.gh-fork {
+  position: fixed;
+  top: 60;
+  right: 0;
+  border: 0;
+  width: 120px;
+  height: 120px;
+  z-index: 998;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.gh-fork:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
 .main-header {
   position: fixed;
   top: 0;
