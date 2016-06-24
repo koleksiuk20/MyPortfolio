@@ -19,4 +19,8 @@ Module bundler:
 
 # Demo
 
+<a href="http://koleksiuk20.github.io">
+    <img src="images/demo/demo.png">
+</a>
+
 Try out the demo <a href="http://koleksiuk20.github.io">here</a>.
