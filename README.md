@@ -17,4 +17,6 @@ Libraries:
 Module bundler:
 - Webpack
 
-Check the website here http://koleksiuk20.github.io
+# Demo
+
+Try out the demo <a href="http://koleksiuk20.github.io">here</a>.
