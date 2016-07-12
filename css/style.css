@@ -3662,7 +3662,17 @@ input[type="button"].btn-block {
   box-shadow: 0 1px 0 rgba(0, 255, 0, 0.1);
   padding: 25px;
   border-radius: 3px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-inner {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .portfolio-inner {
+    margin-bottom: 50px;
+  }
 }
 .portfolio-inner h3 {
   margin-bottom: 25px;
