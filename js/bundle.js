@@ -52,7 +52,7 @@
 	var initAnimatedProgressBar = __webpack_require__(4);
 	var initSliderTransition = __webpack_require__(5);
 	var hideMobileNavClickOutside = __webpack_require__(6);
-	var initFormValidator = __webpack_require__(8);
+	var initFormValidator = __webpack_require__(7);
 
 	$(document).ready(function () {
 
@@ -223,8 +223,7 @@
 	module.exports = hideMobileNavClickOutside;
 
 /***/ },
-/* 7 */,
-/* 8 */
+/* 7 */
 /***/ function(module, exports) {
 
 	'use strict';
