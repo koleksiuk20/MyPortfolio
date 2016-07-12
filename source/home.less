@@ -323,7 +323,10 @@
 }
 
 .contact-text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media @large {
+    margin-bottom: 50px;
+  }
   p {
     .paragraph(16px);
     .center-text;
@@ -367,7 +370,7 @@
 }
 
 .contact-form {
-  margin: 50px 20px 20px 20px;
+  margin: 30px 20px 20px 20px;
   @media @medium {
     margin: 50px 30px 20px 50px;
   }
@@ -433,5 +436,8 @@ form {
 
 // Map
 .map-wrapper {
-  margin: 50px 35px 30px 35px;
+  margin: 10px 35px 30px 35px;
+  @media @large {
+    margin: 50px 35px 30px 35px;
+  }
 }

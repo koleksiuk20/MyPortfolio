@@ -3743,7 +3743,12 @@ input[type="button"].btn-block {
   text-align: center;
 }
 .contact-text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1400px) {
+  .contact-text {
+    margin-bottom: 50px;
+  }
 }
 .contact-text p {
   font-size: 16px;
@@ -3788,7 +3793,7 @@ input[type="button"].btn-block {
   padding-right: 15px;
 }
 .contact-form {
-  margin: 50px 20px 20px 20px;
+  margin: 30px 20px 20px 20px;
 }
 @media only screen and (min-width: 992px) {
   .contact-form {
@@ -3849,7 +3854,12 @@ form textarea:focus {
   color: #c1c3c4;
 }
 .map-wrapper {
-  margin: 50px 35px 30px 35px;
+  margin: 10px 35px 30px 35px;
+}
+@media only screen and (min-width: 1400px) {
+  .map-wrapper {
+    margin: 50px 35px 30px 35px;
+  }
 }
 footer {
   background: #222532;
