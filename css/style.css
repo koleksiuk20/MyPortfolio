@@ -3103,7 +3103,7 @@ input[type="button"].btn-block {
 .section-title {
   margin: 30px 0;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 992px) {
   .section-title {
     margin: 50px 0;
   }
