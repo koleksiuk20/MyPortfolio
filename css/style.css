@@ -3253,9 +3253,9 @@ input[type="button"].btn-block {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0;
-  display: none;
-  width: 40%;
+  right: -200px;
+  display: block;
+  width: 200px;
   padding: 30px 20px 0 30px;
   background: #222532;
   opacity: 0.9;
