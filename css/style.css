@@ -3758,7 +3758,7 @@ input[type="button"].btn-block {
 .contact-text {
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 992px) {
   .contact-text {
     margin-bottom: 50px;
   }
@@ -3869,7 +3869,7 @@ form textarea:focus {
 .map-wrapper {
   margin: 10px 35px 30px 35px;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 992px) {
   .map-wrapper {
     margin: 50px 35px 30px 35px;
   }
