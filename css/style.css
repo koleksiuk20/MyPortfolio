@@ -3469,7 +3469,12 @@ input[type="button"].btn-block {
 }
 .main-box h3 {
   margin: 0 0 10px 0;
-  font-size: 52px;
+  font-size: 38px;
+}
+@media only screen and (min-width: 768px) {
+  .main-box h3 {
+    font-size: 48px;
+  }
 }
 .main-box p {
   color: #999999;
@@ -3481,7 +3486,7 @@ input[type="button"].btn-block {
 .box {
   position: relative;
   width: 100%;
-  margin: 0 7px 50px 0;
+  margin: 0 7px 20px 0;
   padding: 20px;
   float: left;
   background: url('../images/about_images/corner-dot.png') no-repeat 97% 3% #fff;
@@ -3492,10 +3497,15 @@ input[type="button"].btn-block {
   -webkit-box-shadow: 2px 2px 2px 2px #d7d8d6;
   -moz-box-shadow: 2px 2px 2px 2px #d7d8d6;
 }
+@media only screen and (min-width: 768px) {
+  .box {
+    margin: 0 7px 50px 0;
+  }
+}
 .icon {
   position: absolute;
   top: 26px;
-  left: 23px;
+  left: 20px;
   display: block;
   width: 25px;
   height: 26px;
@@ -3513,7 +3523,7 @@ input[type="button"].btn-block {
   background: url('../images/about_images/skills-icon.png');
 }
 .about-section-title {
-  margin: 0 0 15px 45px;
+  margin: 0 0 15px 35px;
   font-size: 28px;
 }
 .about-section-list {
@@ -3523,7 +3533,6 @@ input[type="button"].btn-block {
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
-  line-height: 18px;
 }
 .about-section-list li span {
   display: block;
@@ -3533,6 +3542,9 @@ input[type="button"].btn-block {
   color: #555554;
   font-weight: bold;
 }
+.about-section-list li span.work-title {
+  padding-bottom: 10px;
+}
 .about-section-list li p {
   width: 100%;
   float: left;
@@ -3541,11 +3553,15 @@ input[type="button"].btn-block {
   width: 100px !important;
 }
 .personal-details p {
-  width: 150px !important;
+  width: 100px !important;
+  margin-bottom: 0;
+}
+.education-list li {
+  padding-left: 0;
 }
 .work-details-list {
-  -moz-padding-start: 10px;
-  -webkit-padding-start: 10px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
 }
 .progress {
   position: relative;
