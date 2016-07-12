@@ -3460,7 +3460,17 @@ input[type="button"].btn-block {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 .about .container .row:first-child {
-  margin-top: 50px;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .about .container .row:first-child {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about .container .row:first-child {
+    margin-top: 50px;
+  }
 }
 .about .main-box,
 .about h4,
@@ -3471,6 +3481,9 @@ input[type="button"].btn-block {
 .about h3,
 .about h4 {
   border-bottom: 1px dotted #d7d8d6;
+}
+.main-box {
+  padding: 20px;
 }
 .main-box h3 {
   margin: 0 0 10px 0;

@@ -12,7 +12,13 @@
 .about {
   .container {
     .row:first-child {
-      margin-top: 50px;
+      margin-top: 10px;
+      @media @small {
+        margin-top: 30px;
+      }
+      @media @medium {
+        margin-top: 50px;
+      }
     }
   }
   font-family: @font-family-sans-serif;
@@ -26,6 +32,7 @@
 }
 
 .main-box {
+  padding: 20px;
   h3 {
     margin: 0 0 10px 0;
     font-size: 38px;
