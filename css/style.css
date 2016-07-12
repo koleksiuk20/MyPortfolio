@@ -3781,7 +3781,7 @@ input[type="button"].btn-block {
   transition: all 0.2s ease-in-out;
 }
 .logos-list li a:hover {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .form-wrapper {
   padding-left: 15px;
