@@ -54,6 +54,7 @@
 	var hideMobileNavClickOutside = __webpack_require__(6);
 	var initFormValidator = __webpack_require__(7);
 	var initOpenInNewTab = __webpack_require__(8);
+	var initRemoveCloseLightbox = __webpack_require__(9);
 
 	$(document).ready(function () {
 
@@ -77,6 +78,9 @@
 
 	    // Open social contact in a new tab
 	    initOpenInNewTab();
+
+	    // Remove close button from lightbox
+	    initRemoveCloseLightbox();
 	});
 
 	$(window).load(function () {
@@ -333,6 +337,22 @@
 	}
 
 	module.exports = openInNewTab;
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function removeCloseLightbox() {
+		var closeButton = $('div.lb-closeContainer');
+
+		if (closeButton.length) {
+			closeButton.remove();
+		}
+	}
+
+	module.exports = removeCloseLightbox;
 
 /***/ }
 /******/ ]);
