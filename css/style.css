@@ -3867,7 +3867,7 @@ form textarea:focus {
   color: #c1c3c4;
 }
 .map-wrapper {
-  margin: 10px 35px 30px 35px;
+  margin: 30px 35px 30px 35px;
 }
 @media only screen and (min-width: 992px) {
   .map-wrapper {
