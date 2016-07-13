@@ -53,6 +53,7 @@
 	var initSliderTransition = __webpack_require__(5);
 	var hideMobileNavClickOutside = __webpack_require__(6);
 	var initFormValidator = __webpack_require__(7);
+	var initOpenInNewTab = __webpack_require__(8);
 
 	$(document).ready(function () {
 
@@ -73,6 +74,9 @@
 
 	    // Init form validator
 	    initFormValidator();
+
+	    // Open social contact in a new tab
+	    initOpenInNewTab();
 	});
 
 	$(window).load(function () {
@@ -315,6 +319,20 @@
 	}
 
 	module.exports = initFormValidator;
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function openInNewTab() {
+		$('.logos-list a').click(function () {
+			$(this).attr('target', '_blank');
+		});
+	}
+
+	module.exports = openInNewTab;
 
 /***/ }
 /******/ ]);

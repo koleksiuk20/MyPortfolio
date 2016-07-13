@@ -5,6 +5,7 @@ var initAnimatedProgressBar = require('./animatedProgressBar.js');
 var initSliderTransition = require('./sliderTransition.js');
 var hideMobileNavClickOutside = require('./hideMobileNavClickOutside.js');
 var initFormValidator = require('./initFormValidator.js');
+var initOpenInNewTab = require('./openInNewTab.js');
 
 $(document).ready(function(){
 
@@ -25,6 +26,9 @@ $(document).ready(function(){
 
     // Init form validator
     initFormValidator();
+
+    // Open social contact in a new tab
+    initOpenInNewTab();
 
 
 });
